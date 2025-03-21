@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <h2>Employment Application</h2>
+        <table>
+          <tr>
+            <td><label for="first_name">First Name:</label></td>
+            <td><input type="text" id="first_name" name="first_name" required></td>
+          </tr>
+          <tr>
+            <td><label for="last_name">Last Name:</label></td>
+            <td><input type="text" id="last_name" name="last_name" required></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+          </tr>
+          <tr>
+            <td><label for="phone_number">Phone Number:</label></td>
+            <td><input type="text" id="phone_number" name="phone_number" required></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button type="submit">Save and Continue</button></td>
+          </tr>
+        </table>
+      </form>
+      <form method="post">
+        {% csrf_token %}
+        <h2>Job Experience</h2>
+        <table>
+          <tr>
+            <td><label for="company">Company:</label></td>
+            <td><input type="text" id="company" name="company" required></td>
+          </tr>
+          <tr>
+            <td><label for="job_title">Job Title:</label></td>
+            <td><input type="text" id="job_title" name="job_title" required></td>
+          </tr>
+          <tr>
+            <td><label for="start_date">Start Date:</label></td>
+            <td><input type="date" id="start_date" name="start_date" required></td>
+          </tr>
+          <tr>
+            <td><label for="end_date">End Date:</label></td>
+            <td><input type="date" id="end_date" name="end_date" required></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button type="submit">Save and Continue</button></td>
+          </tr>
+        </table>
+      </form>
+
+      <form method="post">
+        {% csrf_token %}
+        <h2>Bio Data</h2>
+        <table>
+          <tr>
+            <td><label for="date_of_birth">Date of Birth:</label></td>
+            <td><input type="date" id="date_of_birth" name="date_of_birth" required></td>
+          </tr>
+          <tr>
+            <td><label for="place_of_birth">Place of Birth:</label></td>
+            <td><input type="text" id="place_of_birth" name="place_of_birth" required></td>
+          </tr>
+          <tr>
+            <td><label for="nationality">Nationality:</label></td>
+            <td><input type="text" id="nationality" name="nationality" required></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button type="submit">Save and Continue</button></td>
+          </tr>
+        </table>
+      </form>
+
+
+
+
+
+</body>
+</html>
